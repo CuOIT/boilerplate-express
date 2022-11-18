@@ -4,7 +4,7 @@ let fs=require('fs')
 console.log("Hello World");
 console.log(fs.readdirSync(__dirname));
 app.get('/',function(req,res){
-    res.send(File(__dirname+'/views/index.html'));
+    res.sendFile(__dirname+'/views/index.html');
 })
 
 
